@@ -1,0 +1,7 @@
+.evidence-card p {
+  min-height: 4.5em;
+}
+
+@media (max-width: 800px) {
+  .evidence-card p { min-height: 0; }
+}

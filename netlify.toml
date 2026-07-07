@@ -1,0 +1,46 @@
+[build]
+  publish = "."
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "DENY"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=()"
+    Content-Security-Policy = "default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com; connect-src 'self' https://www.google-analytics.com; img-src 'self' data: https://www.google-analytics.com; style-src 'self' 'unsafe-inline'; font-src 'self'; form-action 'self'; frame-ancestors 'none'; base-uri 'self'"
+
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[redirects]]
+  from = "/services/project-management"
+  to = "/services/project-management.html"
+  status = 200
+
+[[redirects]]
+  from = "/services/capital-project-advisory"
+  to = "/services/capital-project-services.html"
+  status = 301
+
+[[redirects]]
+  from = "/services/capital-project-advisory.html"
+  to = "/services/capital-project-services.html"
+  status = 301
+
+[[redirects]]
+  from = "/services/capital-project-services"
+  to = "/services/capital-project-services.html"
+  status = 200
+
+[[redirects]]
+  from = "/services/business-consulting"
+  to = "/services/business-consulting.html"
+  status = 200
+
+[[redirects]]
+  from = "/services/digital-transformation"
+  to = "/services/digital-transformation.html"
+  status = 200

@@ -1,0 +1,16 @@
+.regions-block{margin-top:clamp(5rem,9vw,8rem);border-top:1px solid var(--line)}
+.regions-heading{display:grid;grid-template-columns:1fr 2fr;gap:7vw;padding:3rem 0}
+.regions-heading>span{color:#8a6200;font-size:.72rem;font-weight:700;letter-spacing:.13em;text-transform:uppercase}
+.regions-heading h3{margin:0;color:var(--navy);font-size:clamp(2.2rem,4.5vw,4.5rem);line-height:.98;letter-spacing:-.045em}
+.regions-heading p{grid-column:2;max-width:620px;margin:-1.5rem 0 0;color:var(--muted)}
+.regions-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);border:1px solid var(--line)}
+.region-card{background:#fff;padding:clamp(2rem,4vw,4rem)}
+.region-card-heading{display:flex;justify-content:space-between;align-items:flex-start;border-bottom:1px solid var(--line);padding-bottom:2rem;margin-bottom:2rem}
+.region-card-heading span{color:#8a6200;font-size:.7rem}
+.region-card h4{margin:0;color:var(--navy);font-size:clamp(2.6rem,5vw,5rem);line-height:.9;letter-spacing:-.05em}
+.region-card h3{margin:0;color:var(--navy);font-size:clamp(2.6rem,5vw,5rem);line-height:.9;letter-spacing:-.05em}
+.region-intro{color:var(--muted);margin:0 0 1.5rem}
+.region-card ul{list-style:none;margin:0;padding:0;columns:2;column-gap:2rem}
+.region-card li{break-inside:avoid;padding:.7rem 0;color:var(--navy);border-bottom:1px solid rgba(7,27,45,.09)}
+.footer-disclaimer{max-width:920px;margin:0 0 2rem;color:#83909a;font-size:.72rem;line-height:1.6}
+@media(max-width:800px){.regions-heading,.regions-grid{grid-template-columns:1fr}.regions-heading p{grid-column:1;margin:0}.region-card ul{columns:1}}

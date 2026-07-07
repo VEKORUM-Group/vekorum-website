@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="VEKORUM">
+  <rect width="64" height="64" rx="10" fill="#071b2d"/>
+  <path d="M11 13h13l18 29-8 13z" fill="#fff"/>
+  <path d="M35 13h18L38 36l-8-10z" fill="#d7a92d"/>
+</svg>

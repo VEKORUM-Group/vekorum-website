@@ -1,0 +1,8 @@
+tmp/
+assets/vekorum-globe.png
+assets/vekorum-logo.png
+.netlify/
+node_modules/
+.DS_Store
+Thumbs.db
+*.log

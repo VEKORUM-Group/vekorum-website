@@ -1,0 +1,57 @@
+.founder-photo {
+  display: block;
+  width: clamp(150px, 18vw, 230px);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center 30%;
+  background: #fff;
+  box-shadow: 0 0 0 1px rgba(7, 27, 45, .12);
+}
+
+@media (max-width: 800px) {
+  .founder-photo { width: 160px; }
+}
+
+body:has(.founder-story) .detail-card h3 {
+  min-height: 2.2em;
+  display: flex;
+  align-items: flex-start;
+}
+
+@media (max-width: 800px) {
+  body:has(.founder-story) .detail-card h3 { min-height: 0; }
+}
+
+.how-we-lead .leadership-lead {
+  color: var(--navy);
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 0 0 1rem;
+}
+
+.leadership-principles li {
+  min-height: 330px;
+  display: flex;
+  flex-direction: column;
+}
+
+.leadership-principles h3 {
+  min-height: 3.6em;
+  margin: 3rem 0 1.25rem;
+  color: var(--navy);
+  font-size: 1.35rem;
+  line-height: 1.2;
+  letter-spacing: -.02em;
+}
+
+.leadership-principles p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.65;
+}
+
+@media (max-width: 800px) {
+  .leadership-principles li { min-height: 0; }
+  .leadership-principles h3 { min-height: 0; margin: 3rem 0 1rem; }
+}
