@@ -83,21 +83,14 @@ if ('IntersectionObserver' in window) {
 
 const form = document.querySelector('.contact-form');
 form?.addEventListener('submit', (event) => {
-  event.preventDefault();
   const status = form.querySelector('.form-status');
   if (!form.checkValidity()) {
+    event.preventDefault();
     status.textContent = 'Please complete the required fields.';
     form.reportValidity();
     return;
   }
   status.textContent = 'Sending your enquiry…';
-  const data = new FormData(form);
-  fetch('/', { method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded' }, body: new URLSearchParams(data).toString() })
-    .then((response) => {
-      if (!response.ok) throw new Error('Submission failed');
-      window.location.assign('/thank-you.html');
-    })
-    .catch(() => { status.textContent = 'We could not send your enquiry. Please email info@vekorum.com.'; });
 });
 
 document.querySelectorAll('[data-year]').forEach((element) => { element.textContent = new Date().getFullYear(); });
