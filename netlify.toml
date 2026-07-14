@@ -44,3 +44,18 @@
   from = "/services/digital-transformation"
   to = "/services/digital-transformation.html"
   status = 200
+
+[[redirects]]
+  from = "/global-services"
+  to = "/region/"
+  status = 301
+
+[[redirects]]
+  from = "/global-services/"
+  to = "/region/"
+  status = 301
+
+[[redirects]]
+  from = "/global-services/*"
+  to = "/region/:splat"
+  status = 301
